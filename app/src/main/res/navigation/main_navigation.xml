@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemFragment">
+
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.manish.androidassignment.ui.fragments.ItemFragment"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item" />
+    <fragment
+        android:id="@+id/itemDetailsFragment"
+        android:name="com.manish.androidassignment.ui.fragments.ItemDetailsFragment"
+        android:label="fragment_item_details"
+        tools:layout="@layout/fragment_item_details" />
+</navigation>

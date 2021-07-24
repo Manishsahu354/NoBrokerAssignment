@@ -1,4 +1,4 @@
-package com.tejeet.androidassignment
+package com.manish.androidassignment
 
 import org.junit.Test
 
