@@ -14,5 +14,5 @@ interface ResponseDao {
     suspend fun insertData(responseEntity: ResponseEntity)
 
     @Query("SELECT * FROM response_model_table")
-    fun getAllLocalData(): LiveData<ResponseEntity>
+    suspend fun getAllLocalData(): ResponseEntity
 }

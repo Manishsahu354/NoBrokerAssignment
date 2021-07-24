@@ -8,11 +8,20 @@
     <fragment
         android:id="@+id/itemFragment"
         android:name="com.manish.androidassignment.ui.fragments.ItemFragment"
-        android:label="fragment_item"
-        tools:layout="@layout/fragment_item" />
+        android:label="Item List"
+        tools:layout="@layout/fragment_item" >
+        <action
+            android:id="@+id/action_itemFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/itemDetailsFragment"
-        android:name="com.manish.androidassignment.ui.fragments.ItemDetailsFragment"
-        android:label="fragment_item_details"
-        tools:layout="@layout/fragment_item_details" />
+        android:id="@+id/detailsFragment"
+        android:name="com.manish.androidassignment.ui.fragments.DetailsFragment"
+        android:label="Item Details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="responseitem"
+            app:argType="com.manish.androidassignment.data.model.ResponseModelItem" />
+    </fragment>
+
 </navigation>

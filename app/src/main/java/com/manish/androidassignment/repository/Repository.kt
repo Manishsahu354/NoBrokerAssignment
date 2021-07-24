@@ -5,6 +5,7 @@ import com.manish.androidassignment.data.local.ResponseDao
 import com.manish.androidassignment.data.local.ResponseEntity
 import com.manish.androidassignment.data.model.ResponseModelItem
 import com.manish.androidassignment.data.network.ResponseApi
+import retrofit2.Response
 import javax.inject.Inject
 
 class Repository @Inject constructor(
@@ -12,15 +13,15 @@ class Repository @Inject constructor(
     private val responseDao: ResponseDao
 ) {
 
-    suspend fun getRemoteResponse(): MutableList<ResponseModelItem>? {
-        return responseApi.getRemoteResponse().body()
+    suspend fun getRemoteResponse(): Response<MutableList<ResponseModelItem>> {
+        return responseApi.getRemoteResponse()
     }
 
-    suspend fun insertData(responseEntity: ResponseEntity){
+    suspend fun insertData(responseEntity: ResponseEntity) {
         responseDao.insertData(responseEntity)
     }
 
-    fun getAllLocalData():  LiveData<ResponseEntity>{
+    suspend fun getAllLocalData(): ResponseEntity {
         return responseDao.getAllLocalData()
     }
 }

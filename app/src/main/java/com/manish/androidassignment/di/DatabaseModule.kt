@@ -20,7 +20,7 @@ object DatabaseModule {
     @Provides
     fun provideDatabase(
         @ApplicationContext context: Context
-    ) :ResponseDatabase= Room.databaseBuilder(
+    ): ResponseDatabase = Room.databaseBuilder(
         context,
         ResponseDatabase::class.java,
         ROOM_DATABASE_NAME
