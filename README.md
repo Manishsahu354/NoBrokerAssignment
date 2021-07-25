@@ -8,22 +8,12 @@
 This is an android demo project based on modern Android application tech-stacks and MVVM architecture. The app get data from Remote server and also caching data the in Room Database.
 </p>
 
-## App Screenshots
-
 <table>
   <tr>
-    <td><img src="" width="200"/></td>
-    <td><img src="" width="200"/></td>
-    <td><img src="" width="200"/></td>
-    <td><img src="" width="200"/></td>
+    <td><img src="apk.gif" width="200"/></td>
+ 
   </tr>
-  
-  <tr>
-    <td><img src="" width="200"/></td>
-    <td><img src="" width="200"/></td>
-    <td><img src="" width="200"/></td>
-    <td><img src="" width="200"/></td>
-  </tr>
+
  
  </table>
 
